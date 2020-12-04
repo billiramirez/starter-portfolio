@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+
 import Hero from './Hero/Hero';
 import About from './About/About';
 import Projects from './Projects/Projects';
@@ -7,9 +9,7 @@ import Footer from './Footer/Footer';
 
 import { PortfolioProvider } from '../context/context';
 
-import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
-
-function App() {
+function App({ data }) {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
   const [projects, setProjects] = useState([]);
@@ -17,11 +17,11 @@ function App() {
   const [footer, setFooter] = useState({});
 
   useEffect(() => {
-    setHero({ ...heroData });
-    setAbout({ ...aboutData });
-    setProjects([...projectsData]);
-    setContact({ ...contactData });
-    setFooter({ ...footerData });
+    setHero({ ...data.heroData });
+    setAbout({ ...data.aboutData });
+    setProjects([...data.projectsData]);
+    setContact({ ...data.contactData });
+    setFooter({ ...data.footerData });
   }, []);
 
   return (
@@ -34,5 +34,15 @@ function App() {
     </PortfolioProvider>
   );
 }
+
+App.propTypes = {
+  data: PropTypes.shape({
+    heroData: PropTypes.object,
+    aboutData: PropTypes.object,
+    projectsData: PropTypes.object,
+    contactData: PropTypes.object,
+    footerData: PropTypes.object,
+  }),
+};
 
 export default App;

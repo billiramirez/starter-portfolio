@@ -1,14 +1,14 @@
-import { nanoid } from 'nanoid';
+const { nanoid } = require('nanoid');
 
 // HEAD DATA
-export const headData = {
+const headData = {
   title: 'Billi Ramirez', // e.g: 'Name | Developer'
   lang: 'en', // e.g: en, es, fr, jp
   description: `Hi, I'm a Software Developer `, // e.g: Welcome to my website
 };
 
 // HERO DATA
-export const heroData = {
+const heroData = {
   title: 'Hi! My name is',
   name: 'Billi Ramirez',
   subtitle: `I'm a Software Developer`,
@@ -16,7 +16,7 @@ export const heroData = {
 };
 
 // ABOUT DATA
-export const aboutData = {
+const aboutData = {
   img: 'profile.jpg',
   paragraphOne: `I believe in giving the customer what exactly needs. Constantly meetings make more accurate software and more valuables features are delivered first. Let's build the right solution.`,
   paragraphTwo: `The time of the clients is the most valuable assets they have, let's get the most out of the agile principles and avoid unnecessary processes. The software industry is constantly changing and it's our duty as a software developer to keep updated on the standards, and good practices.`,
@@ -25,7 +25,7 @@ export const aboutData = {
 };
 
 // PROJECTS DATA
-export const projectsData = [
+const projectsData = [
   {
     id: nanoid(),
     img: 'typescript-todo-app.png',
@@ -62,14 +62,14 @@ export const projectsData = [
 ];
 
 // CONTACT DATA
-export const contactData = {
+const contactData = {
   cta: `Let's make your ideas alive`,
   btn: 'Contact Me',
   email: 'ramirezbilly42@outlook.com',
 };
 
 // FOOTER DATA
-export const footerData = {
+const footerData = {
   networks: [
     {
       id: nanoid(),
@@ -95,6 +95,16 @@ export const footerData = {
 };
 
 // Github start/fork buttons
-export const githubButtons = {
+const githubButtons = {
   isEnabled: false, // set to false to disable the GitHub stars/fork buttons
+};
+
+module.exports = {
+  headData,
+  heroData,
+  aboutData,
+  projectsData,
+  contactData,
+  footerData,
+  githubButtons,
 };
