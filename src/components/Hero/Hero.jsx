@@ -47,7 +47,7 @@ const Header = () => {
     );
   }
 
-  return hero ? renderHero() : null;
+  return Object.keys(hero).length > 0 ? renderHero() : null;
 };
 
 export default Header;
