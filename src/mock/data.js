@@ -21,7 +21,7 @@ export const aboutData = {
   paragraphOne: `I believe in giving the customer what exactly needs. Constantly meetings make more accurate software and more valuables features are delivered first. Let's build the right solution.`,
   paragraphTwo: `The time of the clients is the most valuable assets they have, let's get the most out of the agile principles and avoid unnecessary processes. The software industry is constantly changing and it's our duty as a software developer to keep updated on the standards, and good practices.`,
   paragraphThree: `I'm really passionate about Javascript ecosystem, I have been doing some work with Nodejs, GraphQL, Reactjs, React Native, Redux, Gatsby and Nextjs.`,
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  resume: 'https://blog.billiramirez.dev/', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
