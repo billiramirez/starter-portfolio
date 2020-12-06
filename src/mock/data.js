@@ -59,6 +59,17 @@ const projectsData = [
     url: '',
     repo: 'https://github.com/billiramirez/wi-dash-v2/tree/no-apollo-server', // if no repo, the button will not show up
   },
+  {
+    id: nanoid(),
+    img: 'la-estacion-de-cine-v2.png',
+    title: 'Podcast Website using Gatsby/Contentful',
+    info:
+      'I am really into the JAMStack thing, so I took a starter from Gatsby and Contenful, to fetch the episodes from a Spanish Podcast',
+    info2:
+      'This project is using a Headless CMS called Contentful and Gatsby, this also make use of the webhook of netlify, so every publish, should trigger a new build',
+    url: 'https://la-estacion-de-cine-v2.netlify.app/',
+    repo: 'https://github.com/billiramirez/la-estacion-de-cine-v2', // if no repo, the button will not show up
+  },
 ];
 
 // CONTACT DATA
