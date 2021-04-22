@@ -3,6 +3,13 @@ require('dotenv').config();
 module.exports = {
   plugins: [
     {
+      resolve: '@sentry/gatsby',
+      options: {
+        dsn: 'https://863fc848934d4bb3ac9475149e19262d@o577156.ingest.sentry.io/5731630',
+        sampleRate: 0.7,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
